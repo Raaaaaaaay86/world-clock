@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./styles/reset.css")
+    link(rel="stylesheet", href="./styles/styles.css")
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap' rel='stylesheet')
+    title World Clock
+  body
+    .wrapper
+      h1.title world clock
+      .timeTable
+        each val in ['New_York', 'London', 'Bangkok', 'Taipei', 'Sydney']
+          div(class="area" id=val)
+            .area-info
+              h1.area-location new york
+              p.area-date 27 JAN. 2019
+            div
+              p.area-time 23:59
+  script(src="./js/index.js")

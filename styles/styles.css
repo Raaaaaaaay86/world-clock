@@ -1,0 +1,72 @@
+html {
+  background-color: #E5E5E5;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  margin-bottom: 35px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  font-weight: 800;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+.timeTable {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (105px)[5];
+      grid-template-rows: repeat(5, 105px);
+  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.area {
+  padding: 0 40px 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+
+.area:first-of-type, .area:last-of-type {
+  background: #000;
+  color: #fff;
+}
+
+.area-info h1 {
+  font-size: 36px;
+}
+
+.area-info p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.area-time {
+  font-size: 72px;
+}
+/*# sourceMappingURL=styles.css.map */
